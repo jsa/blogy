@@ -10,8 +10,6 @@ could as well go for a pony ride or something than continue reading.
 Anyways. This is all still very early, but I think it may have some **traces of
 epic** already. (I came up with this in the last few hours.)
 
-<style type='text/css'>.bbpBox22922750764 {background:url(http://s.twimg.com/a/1283473056/images/themes/theme1/bg.png) #1A1B1F;padding:20px;} p.bbpTweet{background:#fff;padding:10px 12px 10px 12px;margin:0;min-height:48px;color:#000;font-size:18px !important;line-height:22px;-moz-border-radius:5px;-webkit-border-radius:5px} p.bbpTweet span.metadata{display:block;width:100%;clear:both;margin-top:8px;padding-top:12px;height:40px;border-top:1px solid #fff;border-top:1px solid #e6e6e6} p.bbpTweet span.metadata span.author{line-height:19px} p.bbpTweet span.metadata span.author img{float:left;margin:0 7px 0 0px;width:38px;height:38px} p.bbpTweet a:hover{text-decoration:underline}p.bbpTweet span.timestamp{font-size:12px;display:block}</style> <div class='bbpBox22922750764'><p class='bbpTweet'>HOLY F'N COW! RT @<a class="tweet-url username" href="http://twitter.com/turbofunctor" rel="nofollow">turbofunctor</a> Wow. Epic. First @<a class="tweet-url username" href="http://twitter.com/netcycler" rel="nofollow">netcycler</a> “self-test” passed by driving @<a class="tweet-url username" href="http://twitter.com/saucelabs" rel="nofollow">saucelabs</a> *directly* from @<a class="tweet-url username" href="http://twitter.com/app_engine" rel="nofollow">app_engine</a>.<span class='timestamp'><a title='Fri Sep 03 21:46:09 +0000 2010' href='http://twitter.com/hugs/status/22922750764'>less than a minute ago</a> via web</span><span class='metadata'><span class='author'><a href='http://twitter.com/hugs'><img src='http://a1.twimg.com/profile_images/60653485/jason_normal.jpg' /></a><strong><a href='http://twitter.com/hugs'>Jason Huggins</a></strong><br/>hugs</span></span></p></div>
-
 Story time
 --
 Okay, so we have this startup thing going on at [Netcycler](http://www.netcycler.fi/) and
@@ -20,8 +18,6 @@ server infra maintained by the AE team, we have little server maintenance left
 for ourselves and we'd like to keep it that way. (We have one little box in a
 corner for backups and analytics.) We found Saucelabs pretty convincing and
 went kicking the tires today.
-
-<style type='text/css'>.bbpBox22896275646 {background:url(http://a1.twimg.com/profile_background_images/2677032/bg_19779.jpg) #9ae4e8;padding:20px;} p.bbpTweet{background:#fff;padding:10px 12px 10px 12px;margin:0;min-height:48px;color:#000;font-size:18px !important;line-height:22px;-moz-border-radius:5px;-webkit-border-radius:5px} p.bbpTweet span.metadata{display:block;width:100%;clear:both;margin-top:8px;padding-top:12px;height:40px;border-top:1px solid #fff;border-top:1px solid #e6e6e6} p.bbpTweet span.metadata span.author{line-height:19px} p.bbpTweet span.metadata span.author img{float:left;margin:0 7px 0 0px;width:38px;height:38px} p.bbpTweet a:hover{text-decoration:underline}p.bbpTweet span.timestamp{font-size:12px;display:block}</style> <div class='bbpBox22896275646'><p class='bbpTweet'>@<a class="tweet-url username" href="http://twitter.com/netcycler" rel="nofollow">netcycler</a> 's first unittest on @<a class="tweet-url username" href="http://twitter.com/saucelabs" rel="nofollow">saucelabs</a> passes -- still stunned by how well the service works. (w/ python client.) &lt;3 video features.<span class='timestamp'><a title='Fri Sep 03 15:24:37 +0000 2010' href='http://twitter.com/turbofunctor/status/22896275646'>less than a minute ago</a> via web</span><span class='metadata'><span class='author'><a href='http://twitter.com/turbofunctor'><img src='http://a2.twimg.com/profile_images/59091250/sweded2_normal.png' /></a><strong><a href='http://twitter.com/turbofunctor'>Janne Savukoski</a></strong><br/>turbofunctor</span></span></p></div>
 
 So, we have this web application running wild in cyberspace and Selenium hosted
 somewhere there as well. The only missing part now is the guy who tells
@@ -131,5 +127,4 @@ from the unittests. This is a chief major benefit. Keep it in mind.
 ----
 
 [twitter.com/turbofunctor](http://twitter.com/turbofunctor)
-
 [Make a wish](http://www.netcycler.fi/)
