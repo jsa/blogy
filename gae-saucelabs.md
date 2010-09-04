@@ -9,7 +9,7 @@ You can very easily make you GAE application run Selenium tests on itself with [
 
 Anyways. This is all still very early, but I think this direction may lead to something funky. (Please note that I came up with this thing in the last few hours.)
 
-> [HOLY F'N COW! RT @turbofunctor Wow. Epic. First @netcycler “self-test” passed by driving @saucelabs *directly* from @app_engine.](http://twitter.com/hugs/status/22922750764)
+> [HOLY F'N COW! RT @turbofunctor …](http://twitter.com/hugs/status/22922750764)
 
 Story time
 --
@@ -72,7 +72,6 @@ Then I have a saucetest.py with something like this:
     
         def tearDown(self):
             self.selenium.stop()
-
 
 And finally a urls.py like this could do:
 
