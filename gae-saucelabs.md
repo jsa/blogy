@@ -1,4 +1,4 @@
-Self-testing AppEngine apps on Saucelabs
+Self-testing AppEngine apps with Saucelabs
 ==
 
 > [Wow. Epic. First @netcycler “self-test” passed by driving @saucelabs *directly* from @app_engine. -- next step: genetic self-evolution.](http://twitter.com/turbofunctor/status/22915523028)
