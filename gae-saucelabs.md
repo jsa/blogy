@@ -100,7 +100,7 @@ Future directions
 --
 1. I'm experimenting on creating a taskqueue chain of testcases.
 1. Running tons of different testcases in parallel is trivial.
-1. How to automate deployment from Github? Presumably AppEngine can't deploy on itself.
+1. How to automate deployment from Github without middle men? Presumably AppEngine can't deploy on itself.
 
 Misc
 --
