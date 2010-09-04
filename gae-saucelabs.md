@@ -44,8 +44,8 @@ that **you can split the Selenium script across several tasks** as you don't
 need to keep the connections open or anything. With this snippet of information,
 you should be all set.
 
-So, replace the `httplib` stuff in the `do_command(…)` of *selenium.py* (of
-*selenium-python-client-driver-1.0.1*) with this snippet and you're almost
+So, replace the `httplib` stuff in the `do_command(…)` of selenium.py (of
+selenium-python-client-driver-1.0.1) with this snippet and you're almost
 there:
 
     from google.appengine.api import urlfetch
@@ -62,7 +62,7 @@ browser bootup takes longer than the maximum urlfetch deadline of 10 seconds.
 
 Below is some pseudo-y code (I had to scrape it from our production code).
 
-Then I have a *saucetest.py* with something like this: 
+Then I have a saucetest.py with something like this: 
 
     import unittest
     
