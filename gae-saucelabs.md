@@ -3,50 +3,29 @@ Self-testing AppEngine apps on Saucelabs
 
 Intro/spoiler
 --
-You can very easily make you GAE application run Selenium tests on
-itself with [Saucelabs](http://saucelabs.com/). It's actually trivial, so you
-could as well go for a pony ride or something than continue reading.
+You can very easily make you GAE application run Selenium tests on itself with [Saucelabs](http://saucelabs.com/). It's actually trivial, so you could as well go for a pony ride or something than continue reading.
 
-Anyways. This is all still very early, but I think it may have some **traces of
-epic** already. (I came up with this in the last few hours.)
+Anyways. This is all still very early, but I think it may have some **traces of epic** already. (I came up with this in the last few hours.)
 
 Story time
 --
-Okay, so we have this startup thing going on at [Netcycler](http://www.netcycler.fi/) and
-we've been looking for ways to better automate the testing. Having the main
-server infra maintained by the AE team, we have little server maintenance left
-for ourselves and we'd like to keep it that way. (We have one little box in a
-corner for backups and analytics.) We found Saucelabs pretty convincing and
-went kicking the tires today.
+Okay, so we have this startup thing going on at [Netcycler](http://www.netcycler.fi/) and we've been looking for ways to better automate testing. Having main server infra maintained by the AE team, we have little server maintenance left for ourselves and we'd like to keep it that way. (We have one little box in a corner for backups and analytics.) We found Saucelabs pretty convincing and went kicking the tires today.
 
-So, we have this web application running wild in cyberspace and Selenium hosted
-somewhere there as well. The only missing part now is the guy who tells
-the Selenium army what to do. (“The driver”, for the sake of techno parlance.)
+So, we have this web application running wild in cyberspace and Selenium hosted somewhere there as well. The only missing part now is the guy who tells the Selenium army what to do. (“The driver”, for the sake of techno parlance.)
 
-It's some 5 minute task to set up a VM to run the selenium-driving unittest
-scripts, but as we're these spoiled brats who want to avoid all maintenance
-responsibility whatsoever, that would've been a significantly sub-optimal solution.
+It's some 5 minute task to set up a VM to run the selenium-driving unittest scripts, but as we're these spoiled brats who want to avoid all maintenance responsibility whatsoever, that would've been a significantly sub-optimal solution.
 
 Basics
 --
 
-Solution? Selenium drivers communicate via HTTP and we can do HTTP request from
-AppEngine. Easy peasy.
+Solution? Selenium drivers communicate via HTTP and we can do HTTP request from AppEngine. Easy peasy.
 
-We're using Python (thank you very much) as are snippets below so written.
-(I'm not mentioning the other option to avoid a cease and desist from a certain
-leisure suit.)
+We're using Python (thank you very much) as are snippets below so written. (I'm not mentioning the other option to avoid a cease and desist from a certain leisure suit.)
 
-Below is some code I scraped and packed for your entertainment, **but there are
-some serious catches**, due to AE request handling deadlines etc. I don't
-want to cover those here just to get this finished, but just take it with you
-that **you can split the Selenium script across several tasks** as you don't
-need to keep the connections open or anything. With this snippet of information,
-you should be all set.
+Below is some code I scraped and packed for your entertainment, **but there are some serious catches**, due to AE request handling deadlines etc. I don't want to cover those here just to get this finished, but just take it with you
+that **you can split the Selenium script across several tasks** as you don't need to keep the connections open or anything. With this snippet of information, you should be all set.
 
-So, replace the `httplib` stuff in the `do_command(…)` of selenium.py (of
-selenium-python-client-driver-1.0.1) with this snippet and you're almost
-there:
+So, replace the `httplib` stuff in the `do_command(…)` of selenium.py (of selenium-python-client-driver-1.0.1) with this snippet and you're almost there:
 
     from google.appengine.api import urlfetch
     response = urlfetch.fetch("http://%s:%d/selenium-server/driver/" % (self.host, self.port),
@@ -56,9 +35,7 @@ there:
                               deadline=10)
     data = response.content
 
-I modified also the `open(…)` to not die on `urlfetch.DownloadError` if
-browser bootup takes longer than the maximum urlfetch deadline of 10 seconds.
-(Just log it or something.)
+I modified also the `open(…)` to not die on `urlfetch.DownloadError` if browser bootup takes longer than the maximum urlfetch deadline of 10 seconds. (Just log it or something.)
 
 Below is some pseudo-y code (I had to scrape it from our production code).
 
@@ -120,11 +97,10 @@ And finally a *urls.py* like this could do:
 
 Misc
 --
-One other benefit I've come across early is that when you're driving the
-Seleniums directly from AppEngine, you have a direct connection to datastore
-from the unittests. This is a chief major benefit. Keep it in mind.
+One other benefit I've come across early is that when you're driving the Seleniums directly from AppEngine, you have a direct connection to datastore from the unittests. This is a chief major benefit. Keep it in mind.
 
 ----
 
 [twitter.com/turbofunctor](http://twitter.com/turbofunctor)
+
 [Make a wish](http://www.netcycler.fi/)
