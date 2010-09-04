@@ -15,7 +15,7 @@ Story time
 --
 Okay, so we have this startup thing going on at [Netcycler](http://www.netcycler.fi/) and we've been looking for ways to better automate testing. Having main server infra maintained by the AE team, we have little server maintenance left for ourselves and we'd like to keep it that way. (We have one little box in a corner for backups and analytics.) We found Saucelabs pretty convincing and went kicking the tires today.
 
-The web application is running wild in cyberspace and Selenium hosted somewhere there as well. The only missing part now is the guy who tells the Selenium army what to do. It's some 5 minute task to set up a VM to run the selenium-driving unittest scripts, but as we're these spoiled brats who want to avoid all maintenance responsibility whatsoever, that would've been a significantly sub-optimal solution.
+The web application is running wild in cyberspace and Selenium is hosted somewhere there as well. The only missing part now is the guy who tells the Selenium army what to do. It's some 5 minute task to set up a VM to run the selenium-driving unittest scripts, but as we're these spoiled brats who want to avoid all maintenance responsibility whatsoever, that would've been a significantly sub-optimal solution.
 
 Basics
 --
