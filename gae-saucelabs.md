@@ -20,11 +20,9 @@ The web application is running wild in cyberspace and Selenium is hosted somewhe
 Basics
 --
 
-Selenium drivers communicate via HTTP and we can do HTTP request from AppEngine. Easy peasy.
+Selenium drivers communicate via HTTP and we can do HTTP requests from AppEngine. Easy peasy.
 
-We're using Python (thank you very much) as are snippets below so written. (I'm not mentioning the other option to avoid a cease and desist from a certain leisure suit.)
-
-Below is some code I scraped and packed for your entertainment, **but there are some serious catches** — due to AE request handling deadlines, for example. I don't want to cover those here just to get this finished, but just take it with you that **you can split the Selenium script across several tasks** as you don't need to keep the connections open or anything. With this snippet of information, you should be all set.
+Below is some code I scraped and packed from our production code, **but there are some serious catches** — due to AE request handling deadlines, for example. I don't want to cover those here just to get this finished, but just take it with you that **you can split the Selenium script across several tasks** as you don't need to keep the connections open or anything. With this snippet of information, you should be all set.
 
 So, replace the `httplib` stuff in the `do_command(…)` of selenium.py (of selenium-python-client-driver-1.0.1) with this snippet and you're almost there:
 
