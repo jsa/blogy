@@ -96,6 +96,12 @@ And finally a urls.py like this could do:
 
 Voilà! Be happy and all.
 
+Future directions
+--
+1. I'm experimenting on creating a taskqueue chain of testcases.
+1. Running tons of different testcases in parallel is trivial.
+1. How to automate deployment from Github? Presumably AppEngine can't deploy on itself.
+
 Misc
 --
 One other benefit I've come across early is that when you're driving the Seleniums directly from AppEngine, you have a direct connection to datastore from the unittests. This is a chief major benefit. Keep it in mind.
