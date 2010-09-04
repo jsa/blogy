@@ -7,7 +7,7 @@ Intro/spoiler
 --
 You can very easily make you GAE application run Selenium tests on itself with [Saucelabs](http://saucelabs.com/). It's actually trivial, so you could as well go for a pony ride or something than continue reading.
 
-Anyways. This is all still very early, but I think this direction may lead to something funky. (Please note that I came up with this thing in the last few hours.)
+Anyways. This is all still very early, but I think this direction may lead to something funky. (Please note that I came up with this thing just in the last few hours.)
 
 > [HOLY F'N COW! RT @turbofunctor …](http://twitter.com/hugs/status/22922750764)
 
