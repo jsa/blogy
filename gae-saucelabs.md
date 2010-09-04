@@ -20,8 +20,7 @@ Solution? Selenium drivers communicate via HTTP and we can do HTTP request from 
 
 We're using Python (thank you very much) as are snippets below so written. (I'm not mentioning the other option to avoid a cease and desist from a certain leisure suit.)
 
-Below is some code I scraped and packed for your entertainment, **but there are some serious catches**, due to AE request handling deadlines etc. I don't want to cover those here just to get this finished, but just take it with you
-that **you can split the Selenium script across several tasks** as you don't need to keep the connections open or anything. With this snippet of information, you should be all set.
+Below is some code I scraped and packed for your entertainment, **but there are some serious catches** — due to AE request handling deadlines, for example. I don't want to cover those here just to get this finished, but just take it with you that **you can split the Selenium script across several tasks** as you don't need to keep the connections open or anything. With this snippet of information, you should be all set.
 
 So, replace the `httplib` stuff in the `do_command(…)` of selenium.py (of selenium-python-client-driver-1.0.1) with this snippet and you're almost there:
 
@@ -33,9 +32,9 @@ So, replace the `httplib` stuff in the `do_command(…)` of selenium.py (of sele
                               deadline=10)
     data = response.content
 
-I modified also the `open(…)` to not die on `urlfetch.DownloadError` if browser bootup takes longer than the maximum urlfetch deadline of 10 seconds. (Just log it or something.)
+I modified also the `open(…)` to not die on `urlfetch.DownloadError` if browser bootup takes longer than the maximum urlfetch deadline of 10 seconds. (Just log it or something.) And missing the response doesn't matter much in this case as the method doesn't return anything, and Saucelabs doesn't seem to bother.
 
-Below is some pseudo-y code (I had to scrape it from our production code).
+Below is some pseudo-y code. (I had to scrape it from our production code.)
 
 Then I have a saucetest.py with something like this: 
 
@@ -93,7 +92,7 @@ And finally a urls.py like this could do:
         (r'^smoke/$', smokerun),
     )
 
-Voilà!
+Voilà! Be happy and all.
 
 Misc
 --
