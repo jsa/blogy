@@ -16,7 +16,7 @@ So, we have this web application running wild in cyberspace and Selenium hosted 
 Basics
 --
 
-Solution? Selenium drivers communicate via HTTP and we can do HTTP request from AppEngine. Easy peasy.
+Selenium drivers communicate via HTTP and we can do HTTP request from AppEngine. Easy peasy.
 
 We're using Python (thank you very much) as are snippets below so written. (I'm not mentioning the other option to avoid a cease and desist from a certain leisure suit.)
 
