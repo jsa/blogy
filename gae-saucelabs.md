@@ -34,8 +34,6 @@ So, replace the `httplib` stuff in the `do_command(…)` of selenium.py (of sele
 
 I modified also the `open(…)` to not die on `urlfetch.DownloadError` if browser bootup takes longer than the maximum urlfetch deadline of 10 seconds. (Just log it or something.) And missing the response doesn't matter much in this case as the method doesn't return anything, and Saucelabs doesn't seem to bother.
 
-Below is some pseudo-y code. (I had to scrape it from our production code.)
-
 Then I have a saucetest.py with something like this: 
 
     import unittest
