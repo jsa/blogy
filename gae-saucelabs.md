@@ -1,3 +1,6 @@
+NB: I moved this to [wiki](http://github.com/jsa/blogy/wiki/Self-testing-AppEngine-apps-with-Saucelabs)] so that I could get tweets there more nicely.
+==
+
 Self-testing AppEngine apps with Saucelabs
 ==
 
