@@ -1,13 +1,11 @@
 Self-testing AppEngine apps with Saucelabs
 ==
 
-![turbofunctor](http://tweetpong.appspot.com/22915523028.png)
-
 Intro
 --
 You can very easily make you GAE application run Selenium tests on itself with [Saucelabs](http://saucelabs.com/). This is all still very early, but I think the direction may lead to something funky. I tested this idea out just moments ago and wrote this quick note just to let people know of this kind a possibility. I'll write about the implications later when we have more experience. The basic promise is parallel testing fully in the cloud.
 
-> [HOLY F'N COW! RT @turbofunctor …](http://twitter.com/hugs/status/22922750764)
+![turbofunctor](http://tweetpong.appspot.com/22915523028.png)
 
 Story time
 --
