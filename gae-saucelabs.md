@@ -1,9 +1,7 @@
-**NOTE: I moved this to [wiki](http://github.com/jsa/blogy/wiki/Self-testing-AppEngine-apps-with-Saucelabs) so that I could get tweets embedded more nicely.**
-
 Self-testing AppEngine apps with Saucelabs
 ==
 
-> [Wow. Epic. First @netcycler “self-test” passed by driving @saucelabs *directly* from @app_engine. -- next step: genetic self-evolution.](http://twitter.com/turbofunctor/status/22915523028)
+![turbofunctor](http://tweetpong.appspot.com/22915523028.png)
 
 Intro
 --
