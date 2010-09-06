@@ -1,3 +1,5 @@
+** I think this still looks better in [wiki](http://github.com/jsa/blogy/wiki/Self-testing-AppEngine-apps-with-Saucelabs).**
+
 Self-testing AppEngine apps with Saucelabs
 ==
 
